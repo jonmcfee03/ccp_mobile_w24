@@ -1,3 +1,7 @@
+html {
+    background: lightgray;
+}
+
 h1 {
     text-align: center;
     font-size: 36px;
@@ -33,6 +37,21 @@ b {
     font-weight: bold;
 }
 
+.recipes {
+    padding: 25px;
+}
+
+.recipes h1, .recipes h2, .recipes h3 {
+    padding-left: 25px;
+    padding-top: 15px;
+}
+
+@media (prefers-reduced-motion) {
+    .grid-container > .gif {
+        display: none;
+    }
+}
+
 .nav-grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -66,7 +85,6 @@ b {
     background-color: rgb(105, 140, 255);
 }
 
-
 .skip-to-main {
     position: absolute;
     overflow: hidden;
@@ -88,8 +106,7 @@ b {
 }
 
 .likes-list {
-    padding-left: 50px;
-    padding-bottom: 100px;
+    text-align: center;
 }
 
 .grid-container {
