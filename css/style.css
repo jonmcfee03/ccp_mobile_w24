@@ -38,7 +38,6 @@ b {
     grid-template-columns: auto auto auto auto;
     margin: 0;
     padding: 0;
-    list-style-type: none;
     overflow: hidden;
     background-color: #333;
 }
@@ -57,14 +56,16 @@ b {
     color: rgb(255, 255, 255);
 }
 
-.nav-grid-container a:hover:not(.active) {
+.nav-grid-container a:hover:not(.active), .nav-grid-container a:focus:not(.active) {
     background-color: rgb(99, 99, 99);
 }
 
 .nav-grid-container .active {
     color: white;
+    text-decoration: underline;
     background-color: rgb(105, 140, 255);
 }
+
 
 .skip-to-main {
     position: absolute;
