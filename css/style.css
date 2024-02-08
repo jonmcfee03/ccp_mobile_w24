@@ -1,0 +1,31 @@
+a {
+    text-decoration: none;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+}
+
+.grid-container > h3 {
+    text-align: center;
+    grid-column: 1 / span 2;
+}
+
+.skip-to-main {
+    position: absolute;
+    overflow: hidden;
+    top: auto;
+    left: -10000px;
+}
+
+.skip-to-main:focus {
+    left: 0px;
+    top: auto;
+}
