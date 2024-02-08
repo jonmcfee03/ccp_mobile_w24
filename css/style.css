@@ -1,9 +1,49 @@
 a {
     text-decoration: none;
+    color: black;
 }
 
-.active {
-    text-decoration: underline;
+.nav-grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.nav-grid-container > li {
+    float: left;
+    font-size: 24px;
+}
+.nav-grid-container a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.nav-grid-container a:hover:not(.active) {
+    background-color: rgb(99, 99, 99);
+}
+
+.nav-grid-container .active {
+    color: white;
+    background-color: rgb(105, 140, 255);
+}
+
+.skip-to-main {
+    position: absolute;
+    overflow: hidden;
+    top: auto;
+    left: -10000px;
+}
+
+.skip-to-main:focus {
+    left: 12px;
+    top: 27px;
 }
 
 .grid-container {
@@ -18,14 +58,12 @@ a {
     grid-column: 1 / span 2;
 }
 
-.skip-to-main {
-    position: absolute;
-    overflow: hidden;
-    top: auto;
-    left: -10000px;
+.grid-container > h2, .grid-container > p {
+    grid-column: 1 / span 2;
+    text-align: center;
 }
 
-.skip-to-main:focus {
-    left: 100px;
-    top: auto;
+.grid-container > img-desc {
+    align-items: center;
+    justify-content: space-around;
 }
