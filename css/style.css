@@ -26,6 +26,6 @@ a {
 }
 
 .skip-to-main:focus {
-    left: 0px;
+    left: 100px;
     top: auto;
 }
