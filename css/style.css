@@ -1,6 +1,36 @@
+h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+p {
+    padding: 20px;
+}
+
+ul li {
+    list-style-type: circle;
+}
+
 a {
     text-decoration: none;
     color: black;
+}
+
+b {
+    font-weight: bold;
 }
 
 .nav-grid-container {
@@ -16,7 +46,9 @@ a {
 .nav-grid-container > li {
     float: left;
     font-size: 24px;
+    list-style-type: none;
 }
+
 .nav-grid-container a {
     display: block;
     padding: 8px;
@@ -47,14 +79,24 @@ a {
     color: black;
 }
 
-h1 {
-    text-align: center;
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
 }
+
+.likes-list {
+    padding-left: 50px;
+    padding-bottom: 100px;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-around;
     gap: 0.5rem;
+    padding: 40px;
 }
 
 .grid-container div {
@@ -70,11 +112,13 @@ h1 {
     text-align: center;
     justify-content: center;
 }
+
 .grid-container img, .grid-container video, .img-desc > p {
     width: 400px;
 }
+
 @media only screen and (max-width: 600px) {
     .grid-container img, .grid-container video, .img-desc > p {
-        width: 80%;
+        width: 100%;
     }
 }
