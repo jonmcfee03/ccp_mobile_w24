@@ -46,24 +46,35 @@ a {
     top: 55px;
     color: black;
 }
+
+h1 {
+    text-align: center;
+}
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
-    justify-content: space-evenly;
+    justify-content: space-around;
     gap: 0.5rem;
 }
 
-.grid-container > h3 {
-    text-align: center;
-    grid-column: 1 / span 2;
+.grid-container div {
+    display: inline;
 }
 
-.grid-container > h2, .grid-container > p {
+.grid-container > h2, .grid-container > .photo-gallery, .grid-container > h3 {
     grid-column: 1 / span 2;
     text-align: center;
 }
 
-.grid-container > img-desc {
-    align-items: center;
-    justify-content: space-around;
+.grid-container > .img-desc {
+    text-align: center;
+    justify-content: center;
+}
+.grid-container img, .grid-container video, .img-desc > p {
+    width: 400px;
+}
+@media only screen and (max-width: 600px) {
+    .grid-container img, .grid-container video, .img-desc > p {
+        width: 80%;
+    }
 }
