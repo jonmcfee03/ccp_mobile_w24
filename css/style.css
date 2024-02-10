@@ -43,9 +43,9 @@ a {
 
 .skip-to-main:focus {
     left: 12px;
-    top: 27px;
+    top: 55px;
+    color: black;
 }
-
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
